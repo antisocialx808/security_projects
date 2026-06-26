@@ -46,10 +46,31 @@ Provide the path to the ZIP file and your wordlist. The tool tries each password
 
 ---
 
+### keylogger.py
+Captures and logs keystrokes in real time using raw terminal input. Each key press is recorded with a timestamp to a local log file. Detects special keys including ENTER and BACKSPACE. Built using Python's tty and termios modules — no external libraries needed.
+
+**Usage:**
+python keylogger.py
+
+Press any keys to log them. Press 'q' to end the session. Logs are saved to keylog.txt in the same directory.
+
+---
+
+### clipboard_monitor.py
+Monitors the system clipboard at one-second intervals and logs any new content detected. Uses Termux's clipboard API, making it compatible with Android environments.
+
+**Usage:**
+python clipboard_monitor.py
+
+The tool runs continuously and prints any new clipboard content to the terminal. Press Ctrl+C to stop. Logs are saved to clipboard_log.txt in the same directory.
+
+---
+
 ## Requirements
 
 - Python 3.x
 - Standard libraries only — no external installs needed
+- clipboard_monitor.py requires Termux with termux-api package installed
 
 ---
 
