@@ -80,6 +80,12 @@ python packet_sniffer.py
 
 ---
 
+## Incident Response Reports
+
+Practical SOC analyst work — log analysis and incident documentation.
+
+### cybersec/reports/2026-06-30_ssh_bruteforce_recon.md
+SSH brute force and web reconnaissance investigation. Covers log correlation across SSH, Apache access, and ModSecurity error logs, with escalation recommendations for an unresolved internal-host anomaly.
 ## Requirements
 pip install requests paramiko python-nmap
 
